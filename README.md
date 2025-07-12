@@ -1,9 +1,24 @@
-Nexus 节点工具
+## <u>Nexus 节点工具</u>
 
 
 
 Nexus 是一套包含服务端和客户端的节点工具，支持跨系统部署，目前已提供 Linux 和 Windows 版本，Mac 版本将在后续更新中支持。
 
+程序已开源：
+https://github.com/szvone/nexus_server
+https://github.com/szvone/nexus_client
+
+<u>此处为预编译版本，强烈建议自行编译后使用。</u>
+<u>使用预编译版本请自行确保数据安全，自己保护好自己的私钥还有电脑上的数据。</u>
+<u>使用本程序则默认同意已经做好一切措施保护自己的数据。</u>
+<u>本程序只需要地址即可运行，不需要私钥。</u>
+
+
+监控面板网页地址：IP:端口，例如：http://127.0.0.1:8182
+
+## <u>工具下载</u>
+
+<u>可通过以下</u>地址下载工具：[https://github.com/szvone/nexusApp/archive/refs/tags/v1.0.zip](https://github.com/szvone/nexusApp/archive/refs/tags/v1.0.zip)
 
 工具文件说明
 
@@ -91,11 +106,7 @@ port: 8182
 若需同时运行多个客户端（多钱包场景），可通过以下方式实现：
 
 
-
-
 *   为每个客户端配置独立的 `nexus_client.txt`（端口号需与对应服务端保持一致，但不同服务端可使用不同端口）。
-
-
 *   每个服务端程序对应一组独立的端口和配置，通过不同端口实现多开。
 
 
@@ -106,10 +117,10 @@ port: 8182
 
 
 1.  先启动服务端程序（根据系统选择对应文件）。
+   -> win系统直接双击exe，linux输入启动命令 ./nexus_server，注意，配置文件nexus_server.txt需要和程序一个目录
 
-
-2.  再启动客户端程序（数量需与服务端 `worker` 配置一致）。
-
+2.  再启动客户端程序。
+   -> win系统直接双击exe，linux输入启动命令 ./nexus_client，注意，配置文件nexus_client.txt需要和程序一个目录
 
 3.  服务端和客户端可跨系统部署（例如 Windows 服务端搭配 Linux 客户端）。
 
@@ -141,7 +152,3 @@ port: 8182
 
 
 如有问题，欢迎提交 Issue 反馈！
-
-
-> （注：文档部分内容可能由 AI 生成）
->
