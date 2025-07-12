@@ -5,6 +5,10 @@ Nexus 节点工具
 Nexus 是一套包含服务端和客户端的节点工具，支持跨系统部署，目前已提供 Linux 和 Windows 版本，Mac 版本将在后续更新中支持。
 
 
+## <u>工具下载</u>
+
+<u>可通过以下</u>地址下载工具：[https://github.com/szvone/nexusApp/archive/refs/tags/v1.0.zip](https://github.com/szvone/nexusApp/archive/refs/tags/v1.0.zip)
+
 工具文件说明
 
 
