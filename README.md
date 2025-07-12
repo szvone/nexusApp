@@ -17,6 +17,7 @@ Nexus 是一套包含服务端和客户端的节点工具，支持跨系统部�
 ## <u>开源说明</u>
 
 程序已开源：
+
 https://github.com/szvone/nexus_server
 
 https://github.com/szvone/nexus_client
@@ -34,11 +35,9 @@ https://github.com/szvone/nexus_client
 
 ## <u>工具下载</u>
 
-<u>可通过以下</u>地址下载工具：[https://github.com/szvone/nexusApp/archive/refs/tags/v1.0.zip](https://github.com/szvone/nexusApp/archive/refs/tags/v1.0.zip)
+点击上方绿色按钮  <>Code ，再点击Download ZIP，下载预编译版本
 
-工具文件说明
-
-
+## <u>工具文件说明</u>
 
 
 
@@ -47,7 +46,7 @@ https://github.com/szvone/nexus_client
 | Windows&#xA; | `nexus_server.exe` | `nexus_client.exe` |
 | Linux&#xA;   | `nexus_server`     | `nexus_client`     |
 
-配置步骤
+## <u>配置说明</u>
 
 
 
@@ -56,21 +55,15 @@ https://github.com/szvone/nexus_client
 服务端配置文件需填写以下信息：
 
 
-
-
 ```
 address: 0x4917a3442E37844423075021fF02e6b4Ea111e6f
 
-
 port: 8182
-
 
 queue: 20
 
-
 worker: 5
 ```
-
 
 
 *   **address**：填写你的钱包地址（替换示例中的默认地址）。
@@ -85,11 +78,10 @@ worker: 5
 *   **worker**：填写计划开启的客户端总数量（示例为 5，即同时运行 5 个客户端）。
 
 
+
 ### 2. 客户端配置（`nexus_client.txt`）&#xA;
 
-客户端配置文件需填写以下信息：
-
-
+客户端配置文件需填写以下信息，请直接修改文件内容，不要新建文件：
 
 
 ```
@@ -97,7 +89,6 @@ host: 127.0.0.1
 
 port: 8182
 ```
-
 
 
 *   **host**：服务端的 IP 地址，根据部署场景选择：
@@ -125,10 +116,7 @@ port: 8182
 *   每个服务端程序对应一组独立的端口和配置，通过不同端口实现多开。
 
 
-运行说明
-
-
-
+## <u>运行说明</u>
 
 
 1.  先启动服务端程序（根据系统选择对应文件）。
@@ -140,20 +128,13 @@ port: 8182
 3.  服务端和客户端可跨系统部署（例如 Windows 服务端搭配 Linux 客户端）。
 
 
-状态截图
-
-
-
-程序运行状态示例：
-
+## <u>示例截图</u>
 
 
 
 ![程序状态截图](status.png)
 
-注意事项
-
-
+## <u>注意事项</u>
 
 
 *   端口号需确保在防火墙中开放，避免被拦截。
@@ -162,4 +143,4 @@ port: 8182
 *   配置文件需与对应程序放在同一目录下，否则可能导致读取失败。
 
 
-如有问题，欢迎提交 Issue 反馈！
+*   如有问题，欢迎提交 Issue 反馈！
