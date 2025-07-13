@@ -1,6 +1,16 @@
+
+## <u>免责声明</u>
+
+不要瞎几把运行我编译好的，免得私钥丢了赖我！
+
+代码已开源，自行编译！
+
+用我编译好的默认你电脑没东西不怕偷！！！
+
+
 ## <u>Nexus 节点工具</u>
 
-Nexus 是一套包含服务端和客户端的节点工具，支持跨系统部署，目前已提供 Linux 和 Windows 预编译版本，Mac 版本请自行下载源码编译。
+Nexus 是一套包含服务端和客户端的节点工具，支持跨系统部署，目前已提供 Linux 和 Windows 和 Mac M系列芯片 预编译版本，其他系统版本请自行下载源码编译。
 
 ## <u>和官方Cli的区别</u>
 
@@ -43,8 +53,9 @@ https://github.com/szvone/nexus_client
 
 | 系统&#xA;      | 服务端程序&#xA;         | 客户端程序&#xA;         |
 | ------------ | ------------------ | ------------------ |
-| Windows&#xA; | `nexus_server.exe` | `nexus_client.exe` |
-| Linux&#xA;   | `nexus_server`     | `nexus_client`     |
+| Windows&#xA; | `Windows/nexus_server.exe` | `Windows/nexus_client.exe` |
+| Linux&#xA;   | `Linux/nexus_server`     | `Linux/nexus_client`     |
+| MacM系列芯片&#xA;   | `MacArm/nexus_server`     | `MacArm/nexus_client`     |
 
 ## <u>配置说明</u>
 
@@ -72,10 +83,10 @@ worker: 5
 *   **port**：端口号，需与客户端配置的 `port` 保持一致（示例为 8182，可自定义）。
 
 
-*   **queue**：取值为「计划开启的客户端数量 × 3」（示例中 5 个客户端对应 20，可根据实际数量调整）。
+*   **queue**：取值为「计划开启的客户端数量 × 3」（示例中 5 个客户端对应 15，可根据实际数量调整，不需要严格一致，可以小点，尽量不要太大以免429）。
 
 
-*   **worker**：填写计划开启的客户端总数量（示例为 5，即同时运行 5 个客户端）。
+*   **worker**：填写计划开启的客户端总数量（示例为 5，即同时运行 5 个客户端，不需要严格一致，可以小点，尽量不要太大以免429）。
 
 
 
