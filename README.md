@@ -6,6 +6,8 @@
 
 代码完全开源，安全性可自行询问AI！
 
+如有帮助，欢迎打赏，打赏地址：0x56affcaaa4703a9e650df7588ff8a10a08cc7b55
+
 ## <u>NexusApp 节点工具</u>
 
 NexusApp 是一套包含服务端和客户端的节点工具，支持跨系统部署。
@@ -103,6 +105,8 @@ https://github.com/szvone/nexus_client
 
 4. 服务端和客户端可跨系统部署（例如 Windows 服务端搭配 Linux 客户端）。
 
+5. 打赏地址：0x56affcaaa4703a9e650df7588ff8a10a08cc7b55
+
 ## <u>进阶玩法</u>
 
 * 目前是拼算力的版本了，所以提供一个高效率版本，使用子进程计算方式，适用于高配电脑。
@@ -133,6 +137,7 @@ https://github.com/szvone/nexus_client
 
 5. 该客户端会自动占用电脑所有性能计算。所以只需要开启 你导入的钱包数量+1 个计算客户端即可，无需多开更多。
 
+6. 打赏地址：0x56affcaaa4703a9e650df7588ff8a10a08cc7b55
 
 ## <u>运行参数</u>
 
