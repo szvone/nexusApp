@@ -110,6 +110,7 @@ https://github.com/szvone/nexus_client
 1. 根据上面的`使用说明`配置好服务端，无需配置客户端。
 
 2. 下载高效率版客户端文件
+
    -> 根据自己的系统下载好客户端程序[客户端下载](https://github.com/szvone/nexus_client_go/releases/)
 
    -> 根据自己的系统下载好客户端计算子程序[客户端计算子程序下载](https://github.com/szvone/nexus_client_worker/releases/)
