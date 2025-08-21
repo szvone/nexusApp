@@ -84,6 +84,9 @@ https://github.com/szvone/nexus_client
 
    -> 如果是首次运行，请点击设置运行参数按钮，根据提示设置好参数，点击确认，会自动生成服务端配置文件(nexus_server.txt)和客户端配置文件(nexus_client.txt)，设置好后请关闭服务端重新打开。
 
+
+
+
 3. 启动客户端程序。
 
    -> Win 系统直接双击nexus_client-windows.exe
@@ -100,6 +103,34 @@ https://github.com/szvone/nexus_client
 
 4. 服务端和客户端可跨系统部署（例如 Windows 服务端搭配 Linux 客户端）。
 
+## <u>进阶玩法</u>
+
+* 目前是拼算力的版本了，所以提供一个高效率版本，使用子进程计算方式，适用于高配电脑。
+
+1. 根据上面的`使用说明`配置好服务端，无需配置客户端。
+
+2. 下载高效率版客户端文件
+   -> 根据自己的系统下载好客户端程序[客户端下载](https://github.com/szvone/nexus_client_go/releases/)
+
+   -> 根据自己的系统下载好客户端计算子程序[客户端计算子程序下载](https://github.com/szvone/nexus_client_worker/releases/)
+
+   -> 上方的下载链接为GithubAction自动化构建的，如需要更高的安全性，请自行下载源码进行构建。
+
+3. 将服务端生成的客户端配置文件(nexus_client.txt)跟上面下载的客户端放一起。
+
+4. 启动客户端程序。
+
+   -> Win 系统直接双击nexus_client_go-windows.exe
+
+   -> Linux 在对应目录使用终端输入启动命令 ./nexus_client_go-linux ,如果报错，可以使用 ./nexus_client_go-linux-static
+
+   -> Mac-M芯片 在对应目录使用终端输入启动命令 ./nexus_client_go-macos-arm
+
+   -> Mac-Intel芯片 在对应目录使用终端输入启动命令 ./nexus_client_go-macos-intel
+
+   注意，配置文件nexus_client.txt需要和客户端程序一个目录。
+
+5. 该客户端会自动占用电脑所有性能计算。所以只需要开启 你导入的钱包数量+1 个计算客户端即可，无需多开更多。
 
 
 ## <u>运行参数</u>
